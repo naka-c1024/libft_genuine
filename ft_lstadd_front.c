@@ -6,7 +6,7 @@
 /*   By: ynakashi <ynakashi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 17:32:19 by ynakashi          #+#    #+#             */
-/*   Updated: 2021/10/21 15:38:02 by ynakashi         ###   ########.fr       */
+/*   Updated: 2022/12/10 11:53:46 by ynakashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-	if (!*lst)
-	{
-		*lst = new;
-		return ;
-	}
 	new->next = *lst;
 	*lst = new;
 }
